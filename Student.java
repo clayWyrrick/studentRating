@@ -13,10 +13,18 @@ public class Student extends Person implements Comparable<Student> {
 
 
 	
+	public Student(String firstName, String lastName, Integer rating) throws NameException {
+		// TODO Auto-generated constructor stub
+		super(firstName, lastName);
+		this.rating = rating;
+	}
+
+
+
 	@Override
-	public int compareTo(Student arg0) {
-		// TODO Auto-generated method stub
-		return 0;
+	public int compareTo(Student o) {
+		
+		return rating - o.getRating();
 	}
 
 
