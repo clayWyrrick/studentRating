@@ -26,7 +26,7 @@ public class CompareLastFirstName implements Comparator<Student> {
 				return 1;
 		}
 		else {
-			return -1,
+			return -1;
 		}
 	}
 	
